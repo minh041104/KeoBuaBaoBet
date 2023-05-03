@@ -2,6 +2,7 @@
 #include<cstdlib>
 #include<ctime>
 #include<random>
+#include <Windows.h>
 using namespace std;
 
 int main() {
@@ -29,13 +30,14 @@ int main() {
             case 3:
                 running_game = true;
                 running_app = false;
+                system("cls");
                 break;
             case 4:
                 running_app = false;
                 break;
-        }
-
+        }    
         while(running_game) {
+            cout<<"So du hien tai: " << balance << endl;
             cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
             unsigned long long bet;
             cin>> bet;
@@ -65,6 +67,7 @@ int main() {
                 case 4:
                     running_game = false;
                     running_app =true;
+                    system("cls");
                     break;
             }
             
@@ -73,36 +76,36 @@ int main() {
                 cout<< "Computer: Keo \n";
                     if(your_choice == 2) {
                         balance += bet;
-                        cout<<"You win, so du hien tai "<< balance;
+                        cout<<"You win";
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so du hien tai "<< balance;
+                        cout<< "You lose";
                     }
                 }
                 if (com_choice == 2){
                     cout<< "Computer: Bua \n";
                     if(your_choice == 3) {
                         balance += bet;
-                        cout<<"You win, so du hien tai "<< balance;
+                        cout<<"You win";
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so du hien tai "<< balance;
+                        cout<< "You lose";
                     }
                 }
                 if (com_choice == 3){
                 cout<< "Computer: Bao \n";
                     if(your_choice == 1) {
                         balance += bet;
-                        cout<<"You win, so du hien tai "<< balance;
+                        cout<<"You win";
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so du hien tai "<< balance;
+                        cout<< "You lose";
                     }
                 }
                 cout<<endl;
