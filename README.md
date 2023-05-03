@@ -1,2 +1,2 @@
 # KeoBuaBaoBet
-Tài xỉu kéo búa bao, được ăn cả ngã ăn năn
+Tài xỉu kéo búa bao || Được ăn cả, ngã ăn gì cũng ăn.
