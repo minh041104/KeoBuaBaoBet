@@ -1,2 +1,2 @@
 # TaiXiuUET
-Tài xỉu kéo búa bao || Được ăn cả, ngã ăn gì cũng ăn.
+Tài xỉu UET || KÉO BÚA BAO Được ăn cả, ngã ăn gì cũng ăn.
