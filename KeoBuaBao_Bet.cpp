@@ -85,36 +85,36 @@ int main() {
                 cout<< "Computer: Keo \n";
                     if(your_choice == 2) {
                         balance += bet;
-                        cout<<"You win";
+                        cout<<"You win\nSo du +"<<bet;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose";
+                        cout<< "You lose\nSo du -"<<bet;
                     }
                 }
                 if (com_choice == 2){
                     cout<< "Computer: Bua \n";
                     if(your_choice == 3) {
                         balance += bet;
-                        cout<<"You win";
+                        cout<<"You win\nSo du +"<<bet;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose";
+                        cout<< "You lose\nSo du -"<<bet;
                     }
                 }
                 if (com_choice == 3){
                 cout<< "Computer: Bao \n";
                     if(your_choice == 1) {
                         balance += bet;
-                        cout<<"You win";
+                        cout<<"You win\nSo du +"<<bet;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose";
+                        cout<< "You lose\nSo du -"<<bet;
                     }
                 }
                 cout<<endl;
