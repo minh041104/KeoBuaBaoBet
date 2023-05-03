@@ -73,36 +73,36 @@ int main() {
                 cout<< "Computer: Keo \n";
                     if(your_choice == 2) {
                         balance += bet;
-                        cout<<"You win, so tien hien tai "<< balance;
+                        cout<<"You win, so du hien tai "<< balance;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so tien hien tai "<< balance;
+                        cout<< "You lose, so du hien tai "<< balance;
                     }
                 }
                 if (com_choice == 2){
                     cout<< "Computer: Bua \n";
                     if(your_choice == 3) {
                         balance += bet;
-                        cout<<"You win, so tien hien tai "<< balance;
+                        cout<<"You win, so du hien tai "<< balance;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so tien hien tai "<< balance;
+                        cout<< "You lose, so du hien tai "<< balance;
                     }
                 }
                 if (com_choice == 3){
                 cout<< "Computer: Bao \n";
                     if(your_choice == 1) {
                         balance += bet;
-                        cout<<"You win, so tien hien tai "<< balance;
+                        cout<<"You win, so du hien tai "<< balance;
                     }else if(your_choice == com_choice) {
                         cout<<"Draw";
                     } else {
                         balance -= bet;
-                        cout<< "You lose, so tien hien tai "<< balance;
+                        cout<< "You lose, so du hien tai "<< balance;
                     }
                 }
                 cout<<endl;
