@@ -58,7 +58,7 @@ int main() {
             cout<< "Nhap lua chon cua ban:\n1.Keo 2.Bua 3.Bao 4.QUIT\n";
             int your_choice;
             cin >> your_choice;
-
+            system("cls");
             switch (your_choice)
             {
                 case 1:
