@@ -1,7 +1,7 @@
-#include<iostream>
-#include<cstdlib>
-#include<ctime>
-#include<random>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <random>
 #include <Windows.h>
 using namespace std;
 
@@ -37,6 +37,12 @@ int main() {
                 break;
         }    
         while(running_game) {
+            if(balance == 0) {
+                cout<<"So du cua ban khong du de choi tiep! Xin ban hay nap tien roi tiep tuc.\n";
+                running_game = false;
+                running_app = true;
+                break;
+            }
             cout<<"So du hien tai: " << balance << endl;
             cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
             unsigned long long bet;
