@@ -11,6 +11,10 @@ int main() {
     unsigned long long balance = 0;
     int init_choice;
 
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dist(1, 3);
+
     while(running_app) {
         cout<<"Nhap lua chon cua ban: 1.Nap tien    2.Kiem tra so du    3.Choi game     4.QUIT\n";
         cin>>init_choice;
@@ -53,8 +57,6 @@ int main() {
                 cin>>bet;
             }
 
-            srand(time(0));
-            int com_choice = rand() % 3 + 1;
             cout<< "Nhap lua chon cua ban:\n1.Keo 2.Bua 3.Bao 4.QUIT\n";
             int your_choice;
             cin >> your_choice;
@@ -77,6 +79,7 @@ int main() {
                     break;
             }
             
+            int com_choice = dist(gen);
             if (running_game) {
                 if (com_choice == 1){
                 cout<< "Computer: Keo \n";
