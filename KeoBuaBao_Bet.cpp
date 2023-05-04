@@ -10,6 +10,7 @@ int main() {
     bool running_app = true;
     unsigned long long balance = 0;
     unsigned long long deposit;
+    unsigned long long withdraw;
     int init_choice;
     int your_choice;
     int com_choice;
@@ -19,7 +20,7 @@ int main() {
     uniform_int_distribution<> dist(1, 3);
 
     while(running_app) {
-        cout<<"Nhap lua chon cua ban: 1.Nap tien    2.Kiem tra so du    3.Choi game     4.QUIT\n";
+        cout<<"Nhap lua chon cua ban: 1.Nap tien    2.Rut tien    3.Kiem tra so du    4.Choi game     5.QUIT\n";
         cin>>init_choice;
 
         switch (init_choice)
@@ -31,14 +32,25 @@ int main() {
                 cout<<"Ban da nap: "<<deposit<<" VND vao tai khoan\n";
                 break;
             case 2:
-                cout<<"So du hien tai la: " << balance<<" VND\n";
+                cout<<"Vui long nhap so tien ban muon rut (So tien rut khong duoc lon hon so du):";
+                cin >> withdraw;
+                while (withdraw > balance) {
+                        cout<<"Ban nhap so tien rut lon hon so du, xin vui long nhap lai:";
+                        cin>>withdraw;
+                    }
+                balance -= withdraw;
+                cout<< "So du -"<< withdraw<<endl;
+                cout<<"Ban da rut: "<< withdraw <<" VND\n";
                 break;
             case 3:
+                cout<<"So du hien tai la: " << balance<<" VND\n";
+                break;
+            case 4:
                 running_game = true;
                 running_app = false;
                 system("cls");
                 break;
-            case 4:
+            case 5:
                 running_app = false;
                 break;
         }    
