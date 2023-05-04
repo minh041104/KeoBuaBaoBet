@@ -48,29 +48,45 @@ int main() {
                 break;
             }
             cout<<"So du hien tai: " << balance << endl;
-            cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
-            unsigned long long bet;
-            cin>> bet;
-
-            while (bet > balance) {
-                cout<<"Ban nhap so tien dat cuoc lon hon so du, xin vui long nhap lai:";
-                cin>>bet;
-            }
 
             cout<< "Nhap lua chon cua ban:\n1.Keo 2.Bua 3.Bao 4.QUIT\n";
             int your_choice;
             cin >> your_choice;
+            unsigned long long bet;
+
             system("cls");
+            cout<<"So du hien tai: " << balance << endl;
             switch (your_choice)
             {
                 case 1:
                     cout<<"Ban chon: Keo \n";
+                    cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
+                    cin>> bet;
+
+                    while (bet > balance) {
+                        cout<<"Ban nhap so tien dat cuoc lon hon so du, xin vui long nhap lai:";
+                        cin>>bet;
+                    }
                     break;
                 case 2:
                     cout<<"Ban chon: Bua \n";
+                    cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
+                    cin>> bet;
+
+                    while (bet > balance) {
+                        cout<<"Ban nhap so tien dat cuoc lon hon so du, xin vui long nhap lai:";
+                        cin>>bet;
+                    }
                     break;
                 case 3:
                     cout<<"Ban chon: Bao \n";
+                    cout<<"Nhap so tien ma ban muon dat cuoc (Ti le 1 an 2):";
+                    cin>> bet;
+
+                    while (bet > balance) {
+                        cout<<"Ban nhap so tien dat cuoc lon hon so du, xin vui long nhap lai:";
+                        cin>>bet;
+                    }
                     break;
                 case 4:
                     running_game = false;
