@@ -9,7 +9,10 @@ int main() {
     bool running_game = false;
     bool running_app = true;
     unsigned long long balance = 0;
+    unsigned long long deposit;
     int init_choice;
+    int your_choice;
+    int com_choice;
 
     random_device rd;
     mt19937 gen(rd());
@@ -23,7 +26,6 @@ int main() {
         {
             case 1:
                 cout<<"Vui long nhap so tien ban muon nap:";
-                unsigned long long deposit;
                 cin >> deposit;
                 balance += deposit;
                 cout<<"Ban da nap: "<<deposit<<" VND vao tai khoan\n";
@@ -50,7 +52,6 @@ int main() {
             cout<<"So du hien tai: " << balance << endl;
 
             cout<< "Nhap lua chon cua ban:\n1.Keo 2.Bua 3.Bao 4.QUIT\n";
-            int your_choice;
             cin >> your_choice;
             unsigned long long bet;
 
@@ -95,7 +96,7 @@ int main() {
                     break;
             }
             
-            int com_choice = dist(gen);
+            com_choice = dist(gen);
             if (running_game) {
                 if (com_choice == 1){
                 cout<< "Computer: Keo \n";
